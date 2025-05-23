@@ -1,0 +1,6 @@
+Sub PopUps()
+    Dim i As Integer
+    For i = 1 To 10
+        MsgBox "HAHAHAHAHAHHAHA", vbCritical, "HAHAHAHAHHAHAA"
+    Next i
+End Sub
