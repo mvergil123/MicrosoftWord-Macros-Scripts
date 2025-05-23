@@ -1,4 +1,4 @@
-Sub PopUps()
+Sub AutoOpen()
     Dim i As Integer
     For i = 1 To 10
         MsgBox "HAHAHAHAHAHHAHA", vbCritical, "HAHAHAHAHHAHAA"
